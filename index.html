@@ -7,7 +7,68 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Wu-Tang Clan Questionaire</h1>
+    <h2>Whats your Wu-Tang Name?</h2>
+
+    <form id="surveyForm">
+        <div class="question">
+            <label for="q1">1. What is your name?</label>
+            <br>
+            <input type="text" id="q1" name="q1" required>
+        </div>
+
+        <div class="question">
+            <label for="q2">2. How cool are you (1–5)</label>
+            <br>
+            <input type="number" id="q2" name="q2" min="1" max="5" required>
+        </div>
+
+        <div class="question">
+            <label for="q3">3. What makes True Greatness?</label>
+            <br>
+            
+            <input type="radio" id="q3_wealth" name="q3" value="Wealth" required>
+            <label for="q3_wealth">Wealth</label><br>
+
+            <input type="radio" id="q3_knowledge" name="q3" value="Knowledge" required>
+            <label for="q3_knowledge">Knowledge</label><br>
+
+            <input type="radio" id="q3_power" name="q3" value="Power" required>
+            <label for="q3_power">Power</label><br>
+
+            <input type="radio" id="q3_patience" name="q3" value="Patience" required>
+            <label for="q3_patience">Patience</label><br>
+        </div>
+
+        <div class="question">
+            <label for="q4">4. Whats important to Rap?</label>
+            <br>
+
+            <input type="checkbox" id="flow" name="flow" value="Flow">
+            <label for="flow"> Flow</label><br>
+
+            <input type="checkbox" id="cadence" name="cadence" value="Cadence">
+            <label for="cadence"> Cadence</label><br>
+
+            <input type="checkbox" id="difficulty" name="difficulty" value="Difficulty">
+            <label for="difficulty"> Difficulty</label>
+        </div>
+
+        <div class="question">
+            <label for="q5">5. Do you believe in Magic? (yes/no)</label>   
+            <br>
+
+            <input type="radio" id="q5_yes" name="q5" value="Yes" required>
+            <label for="q5_yes">Yes</label><br>
+
+            <input type="radio" id="q5_no" name="q5" value="No" required>
+            <label for="q5_no">No</label><br>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="result"></div>
 
     <script src="main.js"></script>
 </body>
