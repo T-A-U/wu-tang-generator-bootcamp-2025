@@ -1,4 +1,5 @@
- function generateWuTang() {
+//made with help
+function generateWuTang() {
     const q = document.forms.wuQuestionaire;
     const parts = [q.q1.value, q.q3.value, q.q4.value];
     const name = parts.join('');
