@@ -9,3 +9,9 @@
     display: block;
     margin: 0 auto;
   }
+  form{
+    border: dotted skyblue;
+    width: fit-content;
+    padding: 3rem;
+
+  }
